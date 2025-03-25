@@ -13,9 +13,11 @@ return new class extends Migration
     {
         Schema::create('ventas', function (Blueprint $table) {
             $table->id('id_ventas');
-            $table->date('Fecha_venta');
-            $table->integer('id_usuario');
-            $table->integer('id_juego');
+            $table->date('fecha_venta');
+            $table->unsignedBigInteger('id_usuario');
+            $table->foreign('id_usuario')->references('id_usuario')->on('usuarios')->onDelete('set null');
+            $table->unsignedBigInteger('id_juego');
+            $table->foreign('id_juego')->references('id_juego')->on('juegos')->onDelete('set null');
             $table->timestamps();
         });
     }

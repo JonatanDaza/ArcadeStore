@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('inventarios', function (Blueprint $table) {
             $table->id('id_inventario');
             $table->integer('stock');
-            $table->integer('id_juego');
+            $table->unsignedBigInteger('id_juego');
+            $table->foreign('id_juego')->references('id_juego')->on('juegos')->onDelete('set null');
             $table->timestamps();
         });
     }

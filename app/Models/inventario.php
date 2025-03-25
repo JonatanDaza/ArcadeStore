@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class inventario extends Model
 {
-    //
+    protected $fillable = [
+        'stock',
+        'id_juego'
+    ];
 }

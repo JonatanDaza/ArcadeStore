@@ -12,7 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('pagos', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_pago');
+            $table->string('metodo_pago');
+            $table->double('total');
+            $table->unsignedBigInteger('id_pedido');
+            $table->foreignId('id_pedido')->references('pedidos')->on('id_pedido')->onDelete('set null');
             $table->timestamps();
         });
     }

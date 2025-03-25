@@ -12,7 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('intercambios', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_intercambio');
+            $table->string('estado_intercambio', 100);
+            $table->date('fecha_intercambio');
+            $table->foreignId('id_productosolicitado')->constrained();
+            $table->foreignId('id_productoofrecido')->constrained();
             $table->timestamps();
         });
     }
