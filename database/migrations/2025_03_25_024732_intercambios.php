@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pagos', function (Blueprint $table) {
-            $table->id('id_pago');
-            $table->string('metodo_pago');
-            $table->double('total');
-            $table->unsignedBigInteger('id_pedido');
-            $table->foreignId('id_pedido')->references('pedidos')->on('id_pedido')->onDelete('set null');
+        Schema::create('intercambios', function (Blueprint $table) {
+            $table->id('id_intercambio');
+            $table->string('estado_intercambio', 100);
+            $table->date('fecha_intercambio');
+            $table->unsignedBigInteger('id_productosolicitado');
+            $table->unsignedBigInteger('id_productoofrecido');
             $table->timestamps();
         });
     }
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pagos');
+        //
     }
 };

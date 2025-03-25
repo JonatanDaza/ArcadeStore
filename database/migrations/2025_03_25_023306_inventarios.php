@@ -15,8 +15,9 @@ return new class extends Migration
             $table->id('id_inventario');
             $table->integer('stock');
             $table->unsignedBigInteger('id_juego');
-            $table->foreign('id_juego')->references('id_juego')->on('juegos')->onDelete('set null');
             $table->timestamps();
+
+            $table->foreign('id_juego')->references('id_juego')->on('juegos');
         });
     }
 
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('inventarios');
+        //
     }
 };

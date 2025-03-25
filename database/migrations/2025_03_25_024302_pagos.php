@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('intercambios', function (Blueprint $table) {
-            $table->id('id_intercambio');
-            $table->string('estado_intercambio', 100);
-            $table->date('fecha_intercambio');
-            $table->foreignId('id_productosolicitado')->constrained();
-            $table->foreignId('id_productoofrecido')->constrained();
+        Schema::create("pagos", function (Blueprint $table) {
+            $table->id('id_pago'); 
+            $table->string('metodo_de_pago', 11);
+            $table->integer('total');
+            $table->unsignedBigInteger('id_pedido');
             $table->timestamps();
+
+            $table->foreign('id_pedido')->references('id_pedido')->on('pedidos');            
         });
     }
 
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('intercambios');
+        //
     }
 };

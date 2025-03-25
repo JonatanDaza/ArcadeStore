@@ -11,16 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('convenios', function (Blueprint $table) {
-            $table->id('id_intercambio');
-            $table->string('descripcion', 200);
-            $table->date('fecha_inicio');
-            $table->date('fecha_fin');
+        Schema::create('ventas', function (Blueprint $table) {
+            $table->id('id_venta');
+            $table->date('fecha_venta');
             $table->unsignedBigInteger('id_usuario');
-            $table->foreign('id_usuario')->references('id_usuario')->on('usuarios')->onDelete('set null');
             $table->unsignedBigInteger('id_juego');
-            $table->foreign('id_juego')->references('id_juego')->on('juegos')->onDelete('set null');
             $table->timestamps();
+
+            $table->foreign('id_usuario')->references('id_usuario')->on('usuarios');
+            $table->foreign('id_juego')->references('id_juego')->on('juegos');
         });
     }
 
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('convenios');
+        //
     }
 };

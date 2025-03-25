@@ -18,9 +18,10 @@ return new class extends Migration
             $table->text('descripcion');
             $table->text('requisitos_minimos');
             $table->text('requisitos_recomendados');
-            $table->unsignedBigInteger('id_categoria');
-            $table->foreign('id_categoria')->references('categorias')->on('id_categoria')->onDelete('set null');
+            $table->unsignedBigInteger('categoria_id');
             $table->timestamps();
+
+            $table->foreign('categoria_id')->references('id_categoria')->on('categorias');
         });
     }
 
