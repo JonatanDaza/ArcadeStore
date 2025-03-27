@@ -11,6 +11,18 @@ class usuario extends Model
         'correo',
         'nick',
         'telefono',
+        'contraseña',
+        'tipo'
+    ];
+
+    protected $hidden =[
         'contraseña'
     ];
+
+    public function getAuthPassword()
+    {
+        return $this->contraseña;
+    }
+
+    public $timestamps = false;
 }

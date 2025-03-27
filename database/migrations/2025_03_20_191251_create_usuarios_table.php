@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nick', 15)->unique();
             $table->string('telefono', 10);
             $table->string('contraseña', 50);
+            $table->string('tipo');
             $table->timestamps();
         });
     }
