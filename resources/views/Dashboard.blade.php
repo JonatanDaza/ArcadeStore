@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+
 <body>
   <div class="hero_area">
     <!-- header section strats -->
@@ -13,10 +14,10 @@
         <ul>
             <li><a href="/">Inicio</a></li>
             <li><a href="/empleado">Empleados</a></li>
-            <li><a href="/error_404">Proveedores</a></li>
-            <li><a href="/error_404">Descuentos</a></li>
-            <li><a href="/error_500">Juegos Nuevos</a></li>
-            <li><a href="/error_500">Ventas</a></li>
+            <li><a href="#">Proveedores</a></li>
+            <li><a href="#">Descuentos</a></li>
+            <li><a href="#">Juegos Nuevos</a></li>
+            <li><a href="#">Ventas</a></li>
         </ul>
     </div>
 

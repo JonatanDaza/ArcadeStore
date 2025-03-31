@@ -29,6 +29,7 @@ margin-bottom:20px;
 }
 .sidebar ul{
 margin-bottom:15px;
+list-style: none;
 }
 .sidebar ul li a{
 color: #fff;

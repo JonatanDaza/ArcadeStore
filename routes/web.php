@@ -22,3 +22,7 @@ Route::get('/juegos', function () {
     return view('juegos'); // Replace 'juegos' with your actual view
 })->name('juegos');
 
+Route::get('/empleado', function () {
+    return view('empleado'); // Replace 'cliente' with your actual view
+})->name('cliente');
+

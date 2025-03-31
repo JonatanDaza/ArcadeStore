@@ -1,174 +1,175 @@
 @extends('layouts.app')
 @section('content')
+
 <body>
-<div class="hero_area">
+  <div class="hero_area">
 
-  <!-- header section strats -->
-  <!-- end header section -->
-  <!-- slider section -->
-  <section class=" slider_section position-relative">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      </ol>
-      <!-- la imagen de fondo sale de Style  background-image: url(../images/hero.jpg);-->
-      <div class="carousel-inner">
-        <div class="carousel-item active slide1">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4 offset-md-2">
-                <div class="slider_detail-box">
-                  <h1>
-                    CALL OF DUTY
-                    <br>
-                    <span>
-                      Black ops 6
-                    </span>
-                  </h1>
-                  <p>
-                    Mientras la guerra del Golfo acapara la atención mundial, una tenebrosa fuerza
-                    clandestina se ha infiltrado en los niveles más altos de la CIA, tachando de traidores
-                    a cualquiera que se resista. Exiliados de su agencia y del país que una vez los aclamó como héroes,
-                    Frank Woods, veterano de Black Ops, y su equipo se ven perseguidos por la organización militar que los creó.
-                  </p>
-                  <div class="btn-box">
-                    <a href="#" class="btn-1">
-                      Compra ahora
-                    </a>
-                    <a href="#" class="btn-2">
-                      Mas informacion
-                    </a>
+    <!-- header section strats -->
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <!-- la imagen de fondo sale de Style  background-image: url(../images/hero.jpg);-->
+        <div class="carousel-inner">
+          <div class="carousel-item active slide1">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 offset-md-2">
+                  <div class="slider_detail-box">
+                    <h1>
+                      CALL OF DUTY
+                      <br>
+                      <span>
+                        Black ops 6
+                      </span>
+                    </h1>
+                    <p>
+                      Mientras la guerra del Golfo acapara la atención mundial, una tenebrosa fuerza
+                      clandestina se ha infiltrado en los niveles más altos de la CIA, tachando de traidores
+                      a cualquiera que se resista. Exiliados de su agencia y del país que una vez los aclamó como héroes,
+                      Frank Woods, veterano de Black Ops, y su equipo se ven perseguidos por la organización militar que los creó.
+                    </p>
+                    <div class="btn-box">
+                      <a href="#" class="btn-1">
+                        Compra ahora
+                      </a>
+                      <a href="#" class="btn-2">
+                        Mas informacion
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="slider_img-box">
-            <!--  <img src="images/slider-img.png" alt="">-->
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+              <!--  <img src="images/slider-img.png" alt="">-->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item slide2">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4 offset-md-2">
-                <div class="slider_detail-box">
-                  <h1>
-                    CALL OF DUTY
-                    <span>
-                      Modern Warfare 2
-                    </span>
-                  </h1>
-                  <p>
-                    los jugadores se verán inmersos en un conflicto a escala global sin precedentes
-                    que incluye el regreso de operadores icónicos de la fuerza operativa 141.
-                    Infinity Ward ofrece a los fans una experiencia puntera con un manejo nuevo,
-                    un sistema de IA avanzado, un armero nuevo y una retahíla de innovaciones gráficas
-                    y de jugabilidad que elevarán la franquicia a otro nivel.
-                  </p>
-                  <div class="btn-box">
-                    <a href="#" class="btn-1">
-                      Compra ahora
-                    </a>
-                    <a href="#" class="btn-2">
-                      Mas informacion
-                    </a>
+          <div class="carousel-item slide2">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 offset-md-2">
+                  <div class="slider_detail-box">
+                    <h1>
+                      CALL OF DUTY
+                      <span>
+                        Modern Warfare 2
+                      </span>
+                    </h1>
+                    <p>
+                      los jugadores se verán inmersos en un conflicto a escala global sin precedentes
+                      que incluye el regreso de operadores icónicos de la fuerza operativa 141.
+                      Infinity Ward ofrece a los fans una experiencia puntera con un manejo nuevo,
+                      un sistema de IA avanzado, un armero nuevo y una retahíla de innovaciones gráficas
+                      y de jugabilidad que elevarán la franquicia a otro nivel.
+                    </p>
+                    <div class="btn-box">
+                      <a href="#" class="btn-1">
+                        Compra ahora
+                      </a>
+                      <a href="#" class="btn-2">
+                        Mas informacion
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="slider_img-box">
-              <!--   <img src="images/slider-img.png" alt="">-->
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                <!--   <img src="images/slider-img.png" alt="">-->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item slide3">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4 offset-md-2">
-                <div class="slider_detail-box">
-                  <h1>
-                    BLACK MYTH
-                    <br>
-                    <span>
-                      Wukong
-                    </span>
-                  </h1>
-                  <p>
-                    Un RPG de acción inspirado en la mitología china. Emprenderás la travesía como el Destinado,
-                    enfrentarás desafíos, conocerás maravillas y descubrirás la oscura verdad que yace bajo el engañoso
-                    velo de una gloriosa leyenda ancestral, inspirada en la clásica novela Viaje al Oeste, encarnando al
-                    Rey Mono, un personaje mítico con habilidades sobrenaturales.
-                  </p>
-                  <div class="btn-box">
-                    <a href="#" class="btn-1">
-                      Compra ahora
-                    </a>
-                    <a href="#" class="btn-2">
-                      Mas informacion
-                    </a>
+          <div class="carousel-item slide3">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 offset-md-2">
+                  <div class="slider_detail-box">
+                    <h1>
+                      BLACK MYTH
+                      <br>
+                      <span>
+                        Wukong
+                      </span>
+                    </h1>
+                    <p>
+                      Un RPG de acción inspirado en la mitología china. Emprenderás la travesía como el Destinado,
+                      enfrentarás desafíos, conocerás maravillas y descubrirás la oscura verdad que yace bajo el engañoso
+                      velo de una gloriosa leyenda ancestral, inspirada en la clásica novela Viaje al Oeste, encarnando al
+                      Rey Mono, un personaje mítico con habilidades sobrenaturales.
+                    </p>
+                    <div class="btn-box">
+                      <a href="#" class="btn-1">
+                        Compra ahora
+                      </a>
+                      <a href="#" class="btn-2">
+                        Mas informacion
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="slider_img-box">
-                <!--  <img src="images/slider-img.png" alt="">-->
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                  <!--  <img src="images/slider-img.png" alt="">-->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item slide4">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-4 offset-md-2">
-                <div class="slider_detail-box">
-                  <h1>
-                    ASSASSIN'S
-                    <br>
-                    <span>
-                      Creed III
-                    </span>
-                  </h1>
-                  <p>
-                    Revive la revolución estadounidense o vívela por primera vez
-                    controlando a Connor en la remasterización de Assassin's Creed® III,
-                    con gráficos mejorados y una mecánica de juego mejorada. Además, se
-                    incluye Assassin's Creed® III Liberation Remasterizado y todo el contenido
-                    DLC individual, El quinto título principal de la popular saga de juegos de acción en mundo
-                    abierto
+          <div class="carousel-item slide4">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 offset-md-2">
+                  <div class="slider_detail-box">
+                    <h1>
+                      ASSASSIN'S
+                      <br>
+                      <span>
+                        Creed III
+                      </span>
+                    </h1>
+                    <p>
+                      Revive la revolución estadounidense o vívela por primera vez
+                      controlando a Connor en la remasterización de Assassin's Creed® III,
+                      con gráficos mejorados y una mecánica de juego mejorada. Además, se
+                      incluye Assassin's Creed® III Liberation Remasterizado y todo el contenido
+                      DLC individual, El quinto título principal de la popular saga de juegos de acción en mundo
+                      abierto
 
-                  </p>
-                  <div class="btn-box">
-                    <a href="#" class="btn-1">
-                      Compra ahora
-                    </a>
-                    <a href="#" class="btn-2">
-                      Mas informacion
-                    </a>
+                    </p>
+                    <div class="btn-box">
+                      <a href="#" class="btn-1">
+                        Compra ahora
+                      </a>
+                      <a href="#" class="btn-2">
+                        Mas informacion
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="slider_img-box">
-              <!--    <img src="images/slider-img.png" alt="">-->
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                <!--    <img src="images/slider-img.png" alt="">-->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-  </section>
-  <!-- end slider section -->
-</div>
+    </section>
+    <!-- end slider section -->
+  </div>
 
 
   <!-- about section -->
