@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('ventas', function (Blueprint $table) {
             $table->id('id_venta');
             $table->date('fecha_venta');
-            $table->unsignedBigInteger('id_usuario');
+            $table->unsignedBigInteger('id_users');
             $table->unsignedBigInteger('id_juego');
             $table->timestamps();
 
-            $table->foreign('id_usuario')->references('id_usuario')->on('usuarios');
+            $table->foreign('id_users')->references('id')->on('users');
             $table->foreign('id_juego')->references('id_juego')->on('juegos');
         });
     }

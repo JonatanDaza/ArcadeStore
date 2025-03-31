@@ -25,7 +25,7 @@ btnAcceptModal.onclick= function(){
 
 // cerrar ventana
 window.onclick= function(event){
-    if (event.target === modal){
-        modal.classList.remove('show')
+    if (event.target === Modal){
+        Modal.classList.remove('show')
     }
 }

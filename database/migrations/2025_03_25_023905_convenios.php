@@ -16,11 +16,11 @@ return new class extends Migration
             $table->string('descripcion', 200);
             $table->date('fecha_inicio');
             $table->date('fecha_fin');
-            $table->unsignedBigInteger('id_usuario');
+            $table->unsignedBigInteger('id_users');
             $table->unsignedBigInteger('id_juego');
             $table->timestamps();
 
-            $table->foreign('id_usuario')->references('id_usuario')->on('usuarios');
+            $table->foreign('id_users')->references('id')->on('users');
             $table->foreign('id_juego')->references('id_juego')->on('juegos');
         });
     }

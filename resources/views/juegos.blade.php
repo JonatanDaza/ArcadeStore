@@ -1,90 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content=""/>
-  <meta name="description" content=""/>
-  <meta name="author" content="Scrum 3"/>
-
-  <title>ARCADE STORE</title>
-  <link rel="icon" href="{{ asset('images/logo.png') }}" type="image/png">
-
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.css')}}" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
-  <link href="{{ asset('css/juegos.css') }}" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="{{ asset('css/responsive.css') }}" rel="stylesheet" />
-</head>
+@extends('layouts.app')
+@section('content')
 
 <body>
   <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="/">
-            <img src="images/logo.png" alt="">
-            <span>
-              ARCADE STORE
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/">inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/metricas">Metricas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Juegos </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Free to play</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://wa.me/+573143575304">Contactenos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/login"> Inicio de sesion </a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
-            </div>
-            <div class="quote_btn-container  d-flex justify-content-center">
-              <a href="">
-                 +573143575304
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
+    <!-- header section strats -->
     <!-- end header section -->
-     <!-- slider section -->
+    <!-- slider section -->
     <section class=" slider_section position-relative">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -114,10 +36,10 @@
                       Frank Woods, veterano de Black Ops, y su equipo se ven perseguidos por la organización militar que los creó.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn-1">
+                      <a href="#" class="btn-1">
                         Compra ahora
                       </a>
-                      <a href="" class="btn-2">
+                      <a href="#" class="btn-2">
                         Mas informacion
                       </a>
                     </div>
@@ -150,10 +72,10 @@
                       y de jugabilidad que elevarán la franquicia a otro nivel.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn-1">
+                      <a href="#" class="btn-1">
                         Compra ahora
                       </a>
-                      <a href="" class="btn-2">
+                      <a href="#" class="btn-2">
                         Mas informacion
                       </a>
                     </div>
@@ -186,10 +108,10 @@
                       Rey Mono, un personaje mítico con habilidades sobrenaturales.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn-1">
+                      <a href="#" class="btn-1">
                         Compra ahora
                       </a>
-                      <a href="" class="btn-2">
+                      <a href="#" class="btn-2">
                         Mas informacion
                       </a>
                     </div>
@@ -222,10 +144,10 @@
                       incluye Assassin's Creed® III Liberation Remasterizado y todo el contenido
                       DLC individual, El quinto título principal de la popular saga de juegos de acción en mundo
                       abierto
-
+  
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn-1">
+                      <a href="#" class="btn-1">
                         Compra ahora
                       </a>
                       <a href="#" class="btn-2">
@@ -244,9 +166,10 @@
           </div>
         </div>
       </div>
-
+  
     </section>
     <!-- end slider section -->
+  </div>
     <!--main section-->
     <main>
       <br><br><br>
@@ -439,7 +362,7 @@
 
   <script type="text/javascript" src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
-
+@endsection
 </body>
 
 </html>
