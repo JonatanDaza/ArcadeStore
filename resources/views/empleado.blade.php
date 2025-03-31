@@ -40,53 +40,72 @@
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="/">
-            <img src="images/logo.png" alt="">
-            <span>
-              ARCADE STORE
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/">Salir <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/metricas">Metricas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Juegos </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Free to play</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/WhatsApp">Contactenos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/login"> Inicio de sesion </a>
-                </li>
-              </ul>
-            <!--  <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>-->
-            </div>
-            <div class="quote_btn-container  d-flex justify-content-center">
-              <a href="">
-                 +573143575304
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+              <a class="navbar-brand" href="{{ route('tienda.index') }}">
+                  <img src="{{ asset('images/logo.png') }}" alt="ARCADE STORE Logo">
+                  <span>
+                      ARCADE STORE
+                  </span>
               </a>
-            </div>
-          </div>
-        </nav>
+              <button class="navbar-toggler" type="button" data-toggle="collapse"
+                      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                      <ul class="navbar-nav">
+                          <li class="nav-item {{ request()->routeIs('tienda.index') ? 'active' : '' }}">
+                              <a class="nav-link" href="{{ route('tienda.index') }}">inicio <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item {{ request()->routeIs('metricas') ? 'active' : '' }}">
+                              <a class="nav-link" href="/Dashboard">Metricas</a>
+                          </li>
+                          <li class="nav-item {{ request()->routeIs('juegos') ? 'active' : '' }}">
+                              <a class="nav-link" href="/juegos">Juegos</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Free to play</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="https://wa.me/+573143575304" target="_blank">Contactenos</a>
+                          </li>
+                          @if (Auth::check())
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      {{ Auth::user()->name }}
+                                  </a>
+                                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="{{ route('logout') }}"
+                                         onclick="event.preventDefault();
+                                                   document.getElementById('logout-form').submit();">
+                                          {{ __('Logout') }}
+                                      </a>
+
+                                      <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            class="d-none">
+                                          @csrf
+                                      </form>
+                                  </div>
+                              </li>
+                          @else
+                              <li class="nav-item">
+                                  <a class="nav-link" href="/login"> Inicio de sesion </a>
+                              </li>
+                          @endif
+                      </ul>
+                  </div>
+                  <div class="quote_btn-container d-flex justify-content-center">
+                      <a href="https://wa.me/+573143575304" target="_blank">
+                          +573143575304
+                      </a>
+                  </div>
+              </div>
+          </nav>
       </div>
-    </header>
+  </header>
     <!-- end header section -->
 <body>
     <div class="dashboard">
@@ -96,11 +115,11 @@
         <h2>ARCADE_STORE</h2>
         <ul>
             <li><a href="/">Inicio</a></li>
-            <li><a href="/metricas">Metricas</a></li>
-            <li><a href="/error_404">Proveedores</a></li>
-            <li><a href="/error_404">Descuentos</a></li>
-            <li><a href="/error_500">juegos mas vendidos</a></li>
-            <li><a href="/error_500">Ventas</a></li>
+            <li><a href="/Dashboard">Metricas</a></li>
+            <li><a href="#">Proveedores</a></li>
+            <li><a href="#">Descuentos</a></li>
+            <li><a href="#">juegos mas vendidos</a></li>
+            <li><a href="#">Ventas</a></li>
         </ul>
     </div>
 
